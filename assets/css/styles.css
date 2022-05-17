@@ -555,12 +555,12 @@ html.show-menu body {
 
     background: linear-gradient(0deg, rgb(41 137 97) 0%, rgb(70 197 146) 100%);
     content: '';
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 50%;
-    /* border-radius: 50%; */
+    
     transform: translateX(50%);
     z-index: -1;
 }
@@ -732,7 +732,7 @@ html.show-menu body {
 .shb-page-banner-one {
 
 
-    padding: 180px 0 30px 0;
+    padding: 255px 0 30px 0;
     position: relative;
     background: linear-gradient(0deg, rgb(41 137 97) 0%, rgb(70 197 146) 100%);
 }
@@ -1845,9 +1845,9 @@ html.show-menu body {
 
 .shb-page-user-profession {
     color: #a6a6a8;
-
     font-size: 16px;
     direction: ltr;
+    text-align: left;
 }
 
 .shb-contact-one-card {
@@ -2114,36 +2114,42 @@ section.home-pb {
     background-image: url(../image/background/price_costs_bg.png);
     background-position: center center;
     background-repeat: no-repeat;
+    padding-top: 0;
+    margin-bottom: 20px;
 }
 
 .price_tab {
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 20px;
+    padding: 0;
 }
 
 .price_tab li .nav-link {
     padding: 0px;
     border-radius: 0px;
     background-color: transparent;
-    height: 60px;
-    width: 160px;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 15px 35px;
     font-size: 20px;
     text-transform: capitalize;
     border-radius: 30px;
     box-shadow: 0 0 14px 8px rgba(0, 0, 0, .05);
     background-color: var(--white);
-    margin: 0 10px;
-    font-weight: 600;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -ms-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+
+
+
+
+
+
+
+    transition: unset;
+    width: 335px;
 }
 
 .price_tab .nav-link.active,
@@ -2156,16 +2162,16 @@ section.home-pb {
 .price_inner_tab .white_bg {
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, .05);
     background-color: var(--white);
-    padding: 60px 20px 80px;
+    padding: 30px 20px 60px;
     border-radius: 30px;
     text-align: center;
-    height: 650px;
+
     position: relative;
-}
+margin-bottom: 40px;}
 
 .white_box span {
     display: inline-block;
-    padding: 12px 40px;
+    padding: 10px 40px;
     border-radius: 25px;
     font-size: 20px;
     background-color: var(--shbPlaceBg);
@@ -2176,8 +2182,8 @@ section.home-pb {
 .price_text {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, .06);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .price-cost sub {
@@ -2199,32 +2205,35 @@ section.home-pb {
 }
 
 .price_text p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
-    color: rgba(0, 0, 0, .6);
+    color: #f44336;
     margin-bottom: 15px;
 }
 
 .price_inner_tab [class*="col-"] {
-    margin-bottom: 15px;
+    
 }
 
 .white_box .dec_text p {
     font-size: 18px;
-    font-weight: 500;
+
     color: var(----shbSpaceV);
+    margin-bottom: 7px;
 }
 
 .white_box .btn-common {
-    padding: 15px 20px;
+    padding: 10px 25px;
     display: block;
     position: absolute;
-    bottom: -28px;
+    bottom: -20px;
     right: 0;
     left: 0;
-    max-width: 200px;
+
     margin: 0 auto;
     font-size: 20px;
+    width: max-content;
+    font-weight: normal;
 }
 
 /*Screenshots css here*/
@@ -3333,6 +3342,7 @@ a.blog_main {
 
 .about-us {
     padding-bottom: 0;
+    padding-top: 30px;
 }
 
 .about-us .shb-page-head-one {
@@ -3404,7 +3414,11 @@ a.blog_main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
+}
+
+.main_banner .shape-bottom-center {
     z-index: 1;
+    bottom: 0;
 }
 
 .main_banner::after {
@@ -3433,13 +3447,64 @@ a.blog_main {
     padding-top: 10px;
 }
 
-.et_pb_text_inner {
-    margin-bottom: 70px;
+.privacy {
+    padding-top: 0;
 }
 
+.et_pb_text_inner {
+    margin-bottom: 45px;
+}
+
+.et_pb_text_inner h4 {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
 .et_pb_text_inner li {
     margin-bottom: 12px;
+}
+
+.price-cost {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: baseline;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.price-cost p {
+    margin: 0;
+    font-size: 50px;
+    color: #31996e;
+    line-height: 30px;
+}
+
+.price-cost em {
+    font-style: unset;
+    font-size: 15px;
+}
+
+.color-red {
+    color: #f44336 !important;
+    font-weight: bold;
+}
+
+.tab-pane .shb-page-head-one-short {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.shb-page-user-and-rating {
+    min-width: max-content;
+}
+
+.price_tab::after {
+    display: none;
 }
 
 /* abdo */
@@ -3486,7 +3551,7 @@ a.blog_main {
     }
 
     .shb-page-head-one-title {
-        font-size: 40px;
+        
     }
 
     .shb-work-process-one-title br {
@@ -3510,11 +3575,12 @@ a.blog_main {
     }
 
     .features-dots button p {
-        font-size: 16px;
+        
+        font-weight: normal;
     }
 
     .features-dots button h5 {
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .blue_bg .inner_title {
@@ -3560,11 +3626,11 @@ a.blog_main {
 
 @media only screen and (max-width: 1429px) {
     .shb-footer-one::before {
-        width: 240%;
+        
     }
 
     .shb-footer-style-one {
-        padding: 150px 0 90px;
+        
     }
 
     .shb-page-banner-one h1 {
@@ -3576,7 +3642,7 @@ a.blog_main {
     }
 
     .shb-page-head-one-title {
-        font-size: 36px;
+        
     }
 
     .navbar .navbar-nav .nav-link {
@@ -3599,7 +3665,7 @@ a.blog_main {
     .features-dots button .iconz {
         width: 75px;
         height: 75px;
-        padding: 18px;
+        padding: 10px;
     }
 
     .features-dots button {
@@ -3660,13 +3726,24 @@ a.blog_main {
 }
 
 @media only screen and (max-width: 1199px) {
+    .contact_img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contact_dec {
+        margin-top: 15px;
+    }
+
+
+
     .dropdown-menu {
         min-width: 100px;
     }
 
     .navbar .navbar-nav .nav-link,
     .drop-link {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -3688,19 +3765,27 @@ a.blog_main {
     }
 
     .shb-footer-one::before {
-        width: 250%;
+        
     }
 
     .shb-footer-style-one {
-        padding: 130px 0 70px;
+        
     }
 
     .shb-footer-one-link-head {
         font-size: 16px;
     }
 
+    .contact_dec h4 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
     .contact_dec p {
         font-size: 16px;
+        font-weight: normal;
+        opacity: .9;
+        line-height: inherit;
     }
 
     .contact_bg {
@@ -3716,23 +3801,25 @@ a.blog_main {
     }
 
     .shb-page-head-one-title {
-        font-size: 36px;
+        font-size: 27px;
+        margin-bottom: 5px;
     }
 
     .shb-page-head-one-short {
         font-size: 16px;
+        margin-top: 5px
     }
 
     .shb-work-process-one-steps:not(:last-child) .shb-work-process-one-step-number::after {
         width: calc(75%*5);
     }
+
     .shb-faq-contact-one {
         padding: 60px 0;
     }
 
     .shb-page-banner-one {
-        background-position: bottom right;
-        padding: 60px 0;
+        padding: 210px 0 30px 0;
     }
 
     .shb-blog-one-img {
@@ -3790,7 +3877,7 @@ a.blog_main {
     }
 
     .shb-home-one-hero-content h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .shb-home-one-hero-content p {
@@ -3968,11 +4055,44 @@ a.blog_main {
         font-size: 16px;
     }
 
+    .shb-work-process-one-card img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+
+    .index_from input,
+    .index_from input:focus,
+    .index_from textarea {
+        height: 50px;
+        padding: 5px 30px 5px 15px;
+        font-size: 17px;
+    }
+
+    .index_from textarea {
+        height: 100% !important;
+        padding: 10px 30px 5px 15px;
+        max-height: 100px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--shbSpaceSub);
+        font-size: 15px;
+    }
+
+
+    .index_from .from_submit .btn {
+        padding: 10px 40px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 991px) {
     .navbar .brand {
-        padding: 15px 0;
+        padding: 15px 15px 15px 0;
     }
 
     html.show-menu::after {
@@ -3997,7 +4117,7 @@ a.blog_main {
 
     .navbar .navbar-toggler {
         padding: 0;
-        margin-left: 15px !important;
+        margin-left: 15px;
         z-index: 99;
         width: 35px;
         height: 35px;
@@ -4012,7 +4132,8 @@ a.blog_main {
         -ms-transition: all 0.5s ease 0s;
         -o-transition: all 0.5s ease 0s;
         transition: all 0.5s ease 0s;
-    color: #fff;}
+        color: #fff;
+    }
 
     .show-menu .navbar-toggler {
         z-index: 5;
@@ -4039,23 +4160,24 @@ a.blog_main {
     .show-menu .after-menu {
         display: unset;
         position: absolute;
-        left: 69px;
-        top: 17px;
-    color: #ffffff;}
+        left: 8px;
+        top: 11px;
+        color: #ffffff;
+    }
 
     #navbarNav {
-        box-shadow: 0 0px 0 7px #41ba8a inset;
+        /* box-shadow: 0 0px 0 7px #41ba8a inset; */
         background-color: #fff;
         height: auto !important;
         display: block !important;
         position: fixed;
-        padding: 60px 15px 15px;
+        padding: 20px 15px 15px;
         right: 0px;
         top: 0px;
         bottom: 0;
         opacity: 0;
         width: 100%;
-        max-width: 270px;
+        max-width: 230px;
         z-index: 1;
         font-size: 14px;
         overflow-y: auto;
@@ -4091,7 +4213,8 @@ a.blog_main {
         font-size: 16px;
         display: block;
         text-align: right;
-    color: #121212;}
+        color: #121212;
+    }
 
     .dropdown-menu:before {
         top: 43px;
@@ -4103,8 +4226,9 @@ a.blog_main {
 
 
     .shb-page-head-one-title {
-        font-size: 30px;
-    }
+        
+    font-size: 22px;
+    margin-bottom: 10px;}
 
     .shb-activity-bg {
         background-position: -300px bottom;
@@ -4115,23 +4239,23 @@ a.blog_main {
     }
 
     .shb-footer-one::before {
-        width: 300%;
+        
     }
 
     .shb-footer-style-one {
-        padding: 80px 0 40px;
+        padding: 50px 0 30px;
     }
 
     .shb-footer-one-content-wrapper {
-        border: none;
-        padding: 0;
-        margin-bottom: 2rem;
-        height: auto;
+        
+        
+        
+        
     }
 
     .shb-footer-one-brand {
         max-width: 200px;
-    }
+    margin-bottom: 15px;}
 
     .shb-footer-one-subscribe-mail {
         margin: 2rem auto 0;
@@ -4248,7 +4372,7 @@ a.blog_main {
     .features-dots button .iconz {
         width: 65px;
         height: 65px;
-        padding: 18px;
+        padding: 9px;
         margin: 0 10px;
     }
 
@@ -4257,8 +4381,8 @@ a.blog_main {
     }
 
     .features-dots button p {
-        font-size: 14px;
-    }
+        font-size: 15px;
+    line-height: 23px;}
 
     .features-dots button h5 {
         font-size: 16px;
@@ -4304,25 +4428,25 @@ a.blog_main {
     }
 
     .contact_img {
-        width: 45px;
-        height: 45px;
+        
+        
     }
 
     .contact_dec h4 {
-        font-size: 18px;
-        margin-bottom: 12px;
+        
+        
     }
 
     .contact_dec p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .contact_bg {
-        padding: 30px 5px;
+        padding: 20px 7px;
     }
 
     .index_from .from_submit .btn {
-        padding: 14px 30px;
+        
         font-size: 16px;
         margin-top: 15px;
     }
@@ -4336,7 +4460,7 @@ a.blog_main {
     }
 
     .shb-page-head-one {
-        margin-bottom: 3rem;
+        
     }
 
     .shb-home-one-hero-content p {
@@ -4542,11 +4666,58 @@ a.blog_main {
         padding: 50px 15px;
     }
 
+    .banner-text img {
+        padding-top: 0;
+        top: 0;
+    }
+
+    .about-us .shb-page-head-one-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .about-us .shb-page-head-one-short {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .about-us .img-about {
+        max-height: 350px;
+        top: 0;
+    }
+
+    .shb-work-process-one-title {
+        font-size: 18px;
+    }
+
+    .shb-work-process-one-card img {
+        margin-bottom: 15px;
+    }
+
+    .shb-footer-one-social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .shb-footer-one-text {
+        font-size: 17px;
+        margin: 0 auto 1rem;
+    }
+
+    .shb-page-banner-one {
+        padding: 150px 0 30px 0;
+    }
+
+    .price-cost p {
+        font-size: 40px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
     .navbar .brand {
-        padding: 15px 15px 15px 0;
+        padding: 15px 0;
     }
 
     .shb-activity-bg {
@@ -4590,11 +4761,11 @@ a.blog_main {
     }
 
     .shb-footer-one::before {
-        width: 390%;
+        
     }
 
     .shb-footer-style-one {
-        padding: 60px 0 30px;
+        padding: 45px 0 20px;
     }
 
     .shb-footer-one-link-list li:not(:last-child) {
@@ -4604,7 +4775,7 @@ a.blog_main {
     .shb-footer-one-text,
     .shb-footer-one-subscribe-mail {
         max-width: 100%;
-    }
+    font-size: 16px;}
 
     .shb-faq-contact-one,
     .shb-faq-one {
@@ -4740,11 +4911,11 @@ a.blog_main {
 
     .features-dots button:nth-child(3),
     .features-dots button:nth-child(4) {
-        width: 50%;
+        width: 49%;
     }
 
     .features-dots button {
-        width: 50%;
+        width: 49%;
         text-align: center;
         flex-direction: column;
         justify-content: center;
@@ -4777,22 +4948,22 @@ a.blog_main {
     }
 
     .white_box .btn-common {
-        padding: 10px 15px;
-        bottom: -22px;
-        max-width: 150px;
-        font-size: 18px;
+        
+        
+        
+        font-size: 17px;
     }
 
     .price_inner_tab .white_bg {
-        height: 100%;
-    }
+        
+    padding: 25px 20px 45px;}
 
     .price_inner_tab [class*="col-"] {
-        margin-bottom: 40px;
+        
     }
 
     .shb-work-process-one-title {
-        margin-top: 20px;
+
         margin-bottom: 5px;
     }
 
@@ -4849,9 +5020,155 @@ a.blog_main {
         margin-top: 10px;
     }
 
+    .banner-text img {
+        display: none;
+    }
+
+    .about-us .shb-page-head-one-title {
+        font-size: 19px;
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+
+    .about-us .shb-page-head-one-short {
+        font-size: 15px;
+        margin-top: 5px;
+        line-height: 27px;
+    }
+
+    .shb-work-process-one-card {
+        padding: 30px 20px;
+        padding-top: 0;
+    }
+
+    .shb-work-process-one-card img {
+        margin-top: 30px;
+    }
+
+    .shb-page-head-one-title {
+        
+    font-size: 19px;
+    margin-bottom: 5px;
+    line-height: 30px;}
+
+    .shb-page-head-one-short {
+        
+        
+        
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 27px;}
+
+    .shb-page-head-one {
+        margin-bottom: 1rem;
+    }
+
+    .features .features_round {
+        display: none;
+    }
+
+    .home2_faq {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .shb-faq-data-wrapper .card-body {
+        font-weight: normal;
+    }
+
+    .shb-faq-one-question {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .shb-faq-data-wrapper .card {
+        padding: 13px 18px;
+    }
+
+    .shb-faq-one-card {
+        margin-bottom: 12px;
+    }
+
+    section {
+        padding-bottom: 35px;
+        padding-top: 35px;
+    }
+
+    .shb-page-reiview-user-photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        top: -20px;
+        right: -20px;
+    }
+
+    .shb-page-review-one-card {
+        padding: 15px 55px 15px 15px;
+        margin-bottom: 10px;
+    }
+
+    .shb-page-review-text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .shb-page-review-icon-quote {
+        width: 25px;
+        height: 25px;
+        bottom: 35px;
+        right: 15px;
+    }
+
+    .shb-page-reviews {
+        padding: 40px 25px 0 0;
+    }
+
+    .shb-page-user-name {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .shb-page-user-rating .fas,
+    .shb-page-user-rating .far {
+        font-size: 12px;
+    }
+
+    .shb-page-user-profession {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .shb-footer-one-content-wrapper {
+        padding: 0;
+    }
+
+    .shb-page-banner-one {
+        padding: 120px 0 30px 0;
+    }
+
+    .price_tab li .nav-link {
+        padding: 12px 30px;
+        font-size: 18px;
+    width: auto;
+    }
+
+    .price_tab {
+        gap: 13px;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
+
+    .navbar .brand {
+        padding: 15px 15px 15px 0;
+    }
+
+    .navbar .navbar-toggler {
+        margin-left: 15px !important;
+    }
 
     .shb-page-process {
         display: block;
@@ -4861,9 +5178,12 @@ a.blog_main {
         height: 100%;
     }
 
-    section {
-        padding-bottom: 40px;
-        padding-top: 40px;
+    section {  
+    padding-bottom: 25px;
+    padding-top: 25px;}
+
+    .privacy {
+        padding-top: 25px;
     }
 
     .home-pb {
@@ -4884,15 +5204,6 @@ a.blog_main {
         height: 500px;
     }
 
-    .contact_dec p {
-        font-size: 17px;
-    }
-
-    .contact_dec h4 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
     .blue_main {
         margin-bottom: 0;
     }
@@ -4904,9 +5215,9 @@ a.blog_main {
 
     .price_tab li .nav-link {
         font-size: 16px;
-        height: 50px;
-        width: 130px;
-    }
+        
+        width: auto;
+    padding: 12px 25px;}
 
     .screenshort-nav {
         margin-top: 40px;
@@ -4967,8 +5278,8 @@ a.blog_main {
     }
 
     .home2_faq {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        
+        
     }
 
     .core_features {
@@ -5013,16 +5324,28 @@ a.blog_main {
         width: 90px;
     }
 
+    .show-menu .after-menu {
+        left: 24px;
+    }
+
+    .shb-page-banner-one {
+        padding: 110px 0 30px 0;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
+
+    .about-us {
+        padding-top: 5px;
+    }
 
     .navbar .navbar-nav .nav-link {
         font-size: 16px;
     }
 
     #navbarNav {
-        max-width: 100%;
+        
     }
 
     .shb-activity-bg {
@@ -5164,11 +5487,11 @@ a.blog_main {
     }
 
     .shb-footer-one::before {
-        width: 450%;
+        /* width: 450%; */
     }
 
     .shb-footer-style-one {
-        padding: 50px 0 20px;
+        padding: 30px 0 15px;
     }
 
     .shb-footer-one-brand {
@@ -5186,19 +5509,11 @@ a.blog_main {
     }
 
     .shb-footer-one-copyright label {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .shb-page-ask-faq {
         width: 100%;
-    }
-
-    .shb-page-head-one-title {
-        font-size: 24px;
-    }
-
-    .shb-page-head-one {
-        margin-bottom: 2rem;
     }
 
     .shb-page-head-one-title br {
@@ -5223,7 +5538,7 @@ a.blog_main {
     }
 
     .shb-page-banner-one {
-        padding: 30px 0;
+        padding: 95px 0 30px 0;
     }
 
     .shb-blog-one {
@@ -5320,24 +5635,24 @@ a.blog_main {
     }
 
     .shb-page-review-one-card {
-        padding: 20px;
+        padding: 20px 15px;
     }
 
     .shb-page-reiview-user-photo {
-        top: -30px;
+        
         right: 20px;
-        width: 75px;
-        height: 75px;
+        
+        
     }
 
     .shb-page-review-icon-quote {
         bottom: 0;
-        right: 120px;
-        top: 15px;
-    }
+        right: 0;
+        left: 0;top: 15px;
+    margin: 0 auto;}
 
     .shb-page-review-text {
-        margin-top: 3rem;
+        margin-top: 35px;
         font-size: 14px;
         margin-bottom: .5rem;
     }
@@ -5357,7 +5672,7 @@ a.blog_main {
 
     .shb-page-user-profession {
         font-size: 15px;
-        width: 50%;
+        
         text-align: left;
     }
 
@@ -5370,19 +5685,25 @@ a.blog_main {
     }
 
     .features-dots button p {
-        font-size: 12px;
+        
     }
 
     .features-dots button h5 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .shb-work-process-one-card {
-        padding: 10px;
+        padding: 25px 10px;
+        padding-top: 0;
     }
 
     .shb-home-one-hero-content h1 {
-        font-size: 32px;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .shb-home-one-hero-content p {
+        font-size: 15px;
     }
 
     .shb-work-process-one-step-number {
@@ -5416,13 +5737,13 @@ a.blog_main {
     }
 
     .price_text {
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+        
+        
     }
 
     .white_box .dec_text p {
         font-size: 16px;
-    }
+    margin-bottom: 5px;}
 
     .blue_bg {
         height: 160px;
@@ -5453,8 +5774,9 @@ a.blog_main {
     }
 
     .shb-page-head-one-short {
-        margin-top: 1rem;
-    }
+        
+    font-size: 14px;
+    line-height: 24px;}
 
     .testimonials_dec p {
         font-size: 16px;
@@ -5535,7 +5857,7 @@ a.blog_main {
     .index_from input,
     .index_from input:focus,
     .index_from textarea {
-        height: 50px;
+        height: 40px;
     }
 
     .home2_price .white_box .dec_text p {
@@ -5570,6 +5892,49 @@ a.blog_main {
 
     .home3_features .core_features {
         padding: 30px 0 0;
+    }
+
+    .about-us .shb-page-head-one-title {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .about-us .shb-page-head-one-short {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .features-dots button {
+        width: 100% !important;
+    float: unset;}
+
+    .shb-page-review-user-and-profession {
+        flex-wrap: wrap;
+    }
+
+    .index_from .from_submit .btn {
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding: 7px 30px;
+    }
+
+    .shb-footer-one-social-link:not(:last-child) {
+        margin-left: 0.2rem;
+    }
+
+    .shb-footer-one-social-link {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .shb-footer-one-copyright {
+        padding: 10px 0;
+    }
+
+    .price-cost p {
+        font-size: 35px;
     }
 
 }
@@ -5687,9 +6052,10 @@ a.blog_main {
     }
 
     .price_tab li .nav-link {
-        height: 50px;
-        width: 120px;
+        
+        
     }
+
     .homebanner2 {
         padding: 100px 0 0;
     }
@@ -5702,4 +6068,25 @@ a.blog_main {
     .banner3_text {
         top: 18%;
     }
+
+    .shb-home-one-hero-content h1 {
+        font-size: 19px;
+    }
+
+    .shb-work-process-one-card img {
+        margin-top: 25px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .shb-work-process-one-text {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .shb-page-banner-one {
+        padding: 80px 0 30px 0;
+    }
+
 }
