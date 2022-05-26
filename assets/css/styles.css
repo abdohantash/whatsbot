@@ -2463,11 +2463,11 @@ margin-bottom: 40px;}
 }
 
 .contact_dec p {
-    font-size: 15px;
-    opacity: 0.6;
+    font-size: 20px;
+    opacity: 0.7;
     color: var(--shbSpaceV);
     margin-bottom: 0;
-    font-weight: 600;
+    
 }
 
 /*Home1 Page css end*/
@@ -3507,6 +3507,13 @@ a.blog_main {
     display: none;
 }
 
+.svg-style {
+    height: 490px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
 /* abdo */
 
 
@@ -3726,6 +3733,12 @@ a.blog_main {
 }
 
 @media only screen and (max-width: 1199px) {
+
+    .svg-style {
+        height: auto;
+    }
+    
+
     .contact_img {
         width: 32px;
         height: 32px;
@@ -4716,6 +4729,10 @@ a.blog_main {
 }
 
 @media only screen and (max-width: 767px) {
+    .svg-style {
+        height: 215px;
+    }
+
     .navbar .brand {
         padding: 15px 0;
     }
